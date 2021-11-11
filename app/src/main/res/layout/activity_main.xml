@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/location"
+        android:text="Location : "
+        android:padding="10dp"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_below="@id/location"
+        android:textColor="#fff"
+        android:background="@color/colorPrimary"
+        android:text="Get Location"
+        android:id="@+id/getlocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/openmap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/getlocation"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="OPEN Map in APP"
+        android:textColor="#fff" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/openmap"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:textSize="14sp"
+        android:text="OPEN Map in APP With Google Play Service Location"
+        android:id="@+id/fetch_current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="Gyro Scope"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/xValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="xValues" />
+
+    <TextView
+        android:id="@+id/yValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xValue"
+        android:layout_marginTop="30sp"
+        android:text="yValues" />
+
+    <TextView
+        android:id="@+id/zValue"
+        android:text="zValues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yValue"
+        android:layout_marginTop="30sp" />
+
+    <TextView
+        android:id="@+id/msgTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zValue"
+        android:layout_marginTop="30sp"
+        android:text="TextView" />
+
+</RelativeLayout>
